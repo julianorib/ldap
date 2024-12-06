@@ -21,6 +21,7 @@ ldapsearch -x -H ldaps://server.dominio.com.br:636 -b "DC=dominio,dc=com,dc=br" 
 ```
 Se retornar erro, será necessário colocar o certificado CA no Servidor de origem da consulta.
 
+[](AD.md)
 
 ## Zabbix
 
