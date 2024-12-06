@@ -27,7 +27,7 @@ Se retornar erro, será necessário colocar o certificado CA no Servidor de orig
 
 Ref: <https://www.zabbix.com/documentation/current/en/manual/web_interface/frontend_sections/users/authentication/ldap>
 
-Será necesário colocar o fqdn completo no nome do host/servidor. Portanto precisa alterar o DNS da origem, para enxergar o host.
+Será necesário colocar o fqdn completo no nome do host/servidor. 
 
 Nome: **Conexão LDAP**\
 host: **ldaps://servidor.dominio.com.br**\
