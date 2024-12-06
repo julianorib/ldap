@@ -9,10 +9,10 @@ Bind User: **Userldap** or **RootDN: CN=Userldap,OU=Serviço,DC=dominio,DC=com.b
 Bind pass: **password**\
 Atribute Login: **sAMAccountName**\
 Atribute name: **givenName**\
-Filter LDAP: **(&(objectClass=user)(memberOf=CN=Acesso Aplicacao,OU=Grupos,OU=Empresa,DC=dominio,DC=com.br))** or 
+Filter LDAP: 
+**(&(objectClass=user)(memberOf=CN=Acesso Aplicacao,OU=Grupos,OU=Empresa,DC=dominio,DC=com.br))**\
 **(&(objectClass=user)(sAMAccountName={0})(memberOf=CN=Acesso Aplicacao,OU=Grupos,OU=Empresa,DC=dominio,DC=com.br))**\
-
-
+*Verificar na documentação da aplicação a melhor forma*
 
 ## Consulta LDAP SSL
 *O nome do servidor deve estar com o FQDN completo*
@@ -21,7 +21,7 @@ ldapsearch -x -H ldaps://server.dominio.com.br:636 -b "DC=dominio,dc=com,dc=br" 
 ```
 Se retornar erro, será necessário colocar o certificado CA no Servidor de origem da consulta.
 
-[](AD.md)
+[Certificado AD no Linux](AD.md)
 
 ## Zabbix
 
